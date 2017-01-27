@@ -23,3 +23,11 @@ sudo apt-get install -y php5 libapache2-mod-php5
 
 #MySQL
 sudo apt-get install -y mysql-server mysql-client php5-mysql
+
+#phpmyadmin
+sudo apt-get install phpmyadmin -y
+sudo ln -fs /usr/share/phpmyadmin /var/www/html/phpmyadmin
+
+#restarting services
+sudo service apache2 restart
+sudo service mysql restart
